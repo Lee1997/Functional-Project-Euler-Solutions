@@ -24,8 +24,7 @@ public class Problem7 {
 				     
 	}
 	
-	public static boolean isPrime(int num){
-		LongPredicate range = d -> d < 2 && d > num;
+	public static boolean isPrime(int num){		
 		return num > 1 &&
 				IntStream.iterate(2, e -> e + 1)
 						  .limit((int) Math.sqrt(num))
